@@ -1,0 +1,33 @@
+html, body {height: 100%;}  /*高さ100%に指定*/
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+textarea#inputText {
+    position:fixed;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    width:50%;
+    height:100%;
+    padding-left:20px;
+    padding-right:-20px;
+    padding-top:20px;
+    background-color: rgb(215, 215, 215);
+    resize: none;
+    border: none;
+    outline:none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", ".HiraKakuInterface-W2";
+    font-size:16px;
+}
+#markdown_content {
+  position: fixed;  /*body要素に対して絶対配置*/
+  box-sizing: border-box;
+  top: 0px;
+  padding-left: 20px;
+  left: 50%;  /*左端を中央に*/
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255,255,255);
+}
