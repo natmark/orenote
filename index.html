@@ -4,16 +4,17 @@
   <meta charset="utf-8"/>
   <title>Orenote</title>
   <script src="lib/marked.js"></script>
-  <script src="index.js"></script>
+  <script src="lib/script.js"></script>
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
   <div id="toolBar">
-    <div id="left_boxIcon"><button type="button" name="list"><span class="mojiicon">ˇ</span></button></div>
-    <div id="left_boxIcon"><button type="button" name="file"><span class="mojiicon">I</span></button></div>
-    <div id="left_boxIcon"><button type="button" name="reload"><span class="mojiicon">|</span></button></div>
-    <div id="right_boxIcon"><button type="button" name="setting"><span class="mojiicon">v</span></button></div>
+    <div id="left_boxIcon"><button type="button" name="list" onClick="openList()"><span class="mojiicon">ˇ</span></button></div>
+    <div id="left_boxIcon"><button type="button" name="file" onClick="newFile()"><span class="mojiicon">I</span></button></div>
+    <div id="left_boxIcon"><button type="button" name="save" onClick="saveFile()"><span class="mojiicon">|</span></button></div>
+    <form><textarea id="titleArea" rows="" cols="" wrap="">new file</textarea></form>
+    <div id="right_boxIcon"><button type="button" name="setting" onClick="openSetting()"><span class="mojiicon">v</span></button></div>
   </div>
   <form><textarea id="inputText" rows="" cols="" wrap=""></textarea></form>
   <script>
