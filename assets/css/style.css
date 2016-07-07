@@ -4,10 +4,21 @@ body {
   padding: 0;
   position: relative;
 }
+#toolBar{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:50px;
+  padding:5px;
+  padding-left:10px;
+  background-color:rgb(66, 66, 66);
+}
+/*PlaneText入力用View*/
 textarea#inputText {
     position:fixed;
     box-sizing: border-box;
-    top: 0px;
+    top: 50px;
     left: 0px;
     width:50%;
     height:100%;
@@ -21,13 +32,49 @@ textarea#inputText {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", ".HiraKakuInterface-W2";
     font-size:16px;
 }
+/*Markdown表示用View*/
 #markdown_content {
   position: fixed;  /*body要素に対して絶対配置*/
   box-sizing: border-box;
-  top: 0px;
+  top: 50px;
   padding-left: 20px;
   left: 50%;  /*左端を中央に*/
   width: 50%;
   height: 100%;
   background-color: rgb(255,255,255);
+}
+/*font-face*/
+@font-face{
+    font-family:'condenseicon';
+    src: url('../../public/iconFont/CONDENSEicon.ttf') format('truetype'),url('../../public/iconFont/CONDENSEicon.otf') format('opentype'),url('../../public/iconFont/CONDENSEicon.woff') format('woff');
+}
+/*フォントの指定*/
+.mojiicon{
+  font-family:'condenseicon';
+  /*以下、ボタンっぽく見せるためのスタイル設定*/
+  font-size:32px;
+  color:rgb(204, 204, 204);
+}
+.mojiicon:hover{
+  color:rgb(255,128,128);
+}
+/*タブバー右アイコン*/
+#right_boxIcon{
+  width:50px;
+  float:right;
+  margin-left: auto;
+}
+/*タブバー左アイコン*/
+#left_boxIcon{
+  width:50px;
+  float:left;
+  margin-right: auto;
+}
+button{
+  cursor:pointer;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border:none;
+  outline:none;
 }

@@ -9,6 +9,12 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
+  <div id="toolBar">
+    <div id="left_boxIcon"><button type="button" name="list"><span class="mojiicon">ˇ</span></button></div>
+    <div id="left_boxIcon"><button type="button" name="file"><span class="mojiicon">I</span></button></div>
+    <div id="left_boxIcon"><button type="button" name="reload"><span class="mojiicon">|</span></button></div>
+    <div id="right_boxIcon"><button type="button" name="setting"><span class="mojiicon">v</span></button></div>
+  </div>
   <form><textarea id="inputText" rows="" cols="" wrap=""></textarea></form>
   <script>
   $('#inputText').bind('input propertychange', function() {
