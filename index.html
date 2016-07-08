@@ -6,11 +6,31 @@
   <title>Orenote</title>
   <script type="text/javascript" src="lib/marked.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slidemenu.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
+  </head>
   <body>
+
+  <div class="slidemenu slidemenu-left">
+    <div class="slidemenu-header">
+      <div>
+        Header
+      </div>
+    </div>
+    <div class="slidemenu-body">
+      <ul class="slidemenu-content">
+        <li><a class="menu-item">Menu 1</a></li>
+        <li><a class="menu-item">Menu 2</a></li>
+        <li><a class="menu-item">Menu 3</a></li>
+        <li><a class="menu-item">Menu 4</a></li>
+        <li><a class="menu-item">Menu 5</a></li>
+      </ul>
+    </div>
+  </div>
+
+
     <div id="toolBar">
-      <div id="left_boxIcon"><button type="button" name="list"><span class="mojiicon">ˇ</span></button></div>
+      <div id="left_boxIcon"><button type="button" name="list" class="button menu-button-left"><span class="mojiicon">ˇ</span></button></div>
       <div id="left_boxIcon"><button type="button" name="file"><span class="mojiicon">I</span></button></div>
       <div id="left_boxIcon"><button type="button" name="reload"><span class="mojiicon">|</span></button></div>
       <div id="right_boxIcon"><button type="button" name="setting"><span class="mojiicon">v</span></button></div>
@@ -25,5 +45,10 @@
       </script>
       <div id="markdown_content"></div>
     </div>
+
+  <script src="lib/sp-slidemenu.js"></script>
+  <script>
+    var menu = SpSlidemenu('#mainView', '.slidemenu-left', '.menu-button-left', {direction: 'left'});
+  </script>
   </body>
 </html>

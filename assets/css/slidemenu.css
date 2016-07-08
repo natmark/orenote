@@ -1,0 +1,26 @@
+#main {
+  z-index: 1;
+}
+.slidemenu {
+  top: 50px;
+  left: 0px;
+  width: 240px;
+  position: fixed;
+  visibility: hidden;
+  background-color:rgb(66, 66, 66);
+  color:rgb(204, 204, 204);
+  z-index: -1;
+}
+.slidemenu .slidemenu-header {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+.slidemenu .slidemenu-body {
+  height: 100%;
+  overflow: scroll;;
+  position: relative;
+}
+.slidemenu .slidemenu-content {
+  position: relative;
+}
