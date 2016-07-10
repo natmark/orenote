@@ -32,10 +32,10 @@
 
     <div id="toolBar">
       <div id="left_boxIcon"><button type="button" name="list" class="button menu-button-left"><span class="mojiicon">ˇ</span></button></div>
-      <div id="left_boxIcon"><button type="button" name="file"><span class="mojiicon">I</span></button></div>
-      <div id="left_boxIcon"><button type="button" name="reload"><span class="mojiicon">|</span></button></div>
+      <div id="left_boxIcon"><button type="button" name="file" onClick="newFile()"><span class="mojiicon">I</span></button></div>
+      <div id="left_boxIcon"><button type="button" name="reload" onClick="saveFile()"><span class="mojiicon">|</span></button></div>
       <form><textarea id="titleArea" rows="" cols="" wrap="">new file</textarea></form>
-      <div id="right_boxIcon"><button type="button" name="setting"><span class="mojiicon">v</span></button></div>
+      <div id="right_boxIcon"><button type="button" name="setting" onClick="openSetting()"><span class="mojiicon">v</span></button></div>
     </div>
     <div id="mainView">
       <textarea id="inputText" rows="" cols="" wrap=""></textarea>
