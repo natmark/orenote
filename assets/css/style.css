@@ -32,7 +32,7 @@ textarea#inputText {
     height:100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 15px;
     background-color: rgb(215, 215, 215);
     resize: none;
     border: none;
@@ -51,6 +51,7 @@ textarea#inputText {
   width: 50%;
   height: 100%;
   background-color: rgb(255,255,255);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", ".HiraKakuInterface-W2";
 }
 /*PlaneText入力用View*/
 textarea#titleArea {
