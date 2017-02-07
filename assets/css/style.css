@@ -4,16 +4,35 @@ body {
   padding: 0;
   position: relative;
 }
+#toolBar{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:40px;
+  padding:5px;
+  padding-left:10px;
+  background-color:rgb(66, 66, 66);
+}
+#mainView{
+  position: relative;
+  top:50px;
+  left:0px;
+  width: 100%;
+  height:calc(100% - 50px);
+  background:rgb(255,255,255);
+}
+/*PlaneText入力用View*/
 textarea#inputText {
-    position:fixed;
+    overflow: scroll;
     box-sizing: border-box;
+    float:left;
     top: 0px;
-    left: 0px;
     width:50%;
     height:100%;
-    padding-left:20px;
-    padding-right:-20px;
-    padding-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
     background-color: rgb(215, 215, 215);
     resize: none;
     border: none;
@@ -21,13 +40,72 @@ textarea#inputText {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", ".HiraKakuInterface-W2";
     font-size:16px;
 }
+/*Markdown表示用View*/
 #markdown_content {
-  position: fixed;  /*body要素に対して絶対配置*/
+  overflow: scroll;
   box-sizing: border-box;
-  top: 0px;
+  float:right;
   padding-left: 20px;
-  left: 50%;  /*左端を中央に*/
+  padding-right: 20px;
+  top: 0px;
   width: 50%;
   height: 100%;
   background-color: rgb(255,255,255);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", ".HiraKakuInterface-W2";
+}
+/*PlaneText入力用View*/
+textarea#titleArea {
+  position: absolute;
+  box-sizing: border-box;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+  width:40%;
+  resize: none;
+  border: none;
+  outline:none;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(255,255,255);
+  background-color: transparent;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", ".HiraKakuInterface-W2";
+  font-size:24px;
+}
+/*font-face*/
+@font-face{
+    font-family:'condenseicon';
+    src: url('../../public/iconFont/CONDENSEicon.ttf') format('truetype'),url('../../public/iconFont/CONDENSEicon.otf') format('opentype'),url('../../public/iconFont/CONDENSEicon.woff') format('woff');
+}
+/*フォントの指定*/
+.mojiicon{
+  font-family:'condenseicon';
+  /*以下、ボタンっぽく見せるためのスタイル設定*/
+  font-size:32px;
+  color:rgb(204, 204, 204);
+}
+.mojiicon:hover{
+  color:rgb(255,128,128);
+}
+/*タブバー右アイコン*/
+#right_boxIcon{
+  width:50px;
+  float:right;
+  margin-left: auto;
+}
+/*タブバー左アイコン*/
+#left_boxIcon{
+  width:10%;
+  max-width:50px;
+  float:left;
+  margin-right: auto;
+}
+button{
+  cursor:pointer;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border:none;
+  outline:none;
 }
